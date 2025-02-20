@@ -2,6 +2,8 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
+import Leader from "@/components/Leader";
+import Services from "@/components/Services";
 
 const Index = () => {
   return (
@@ -9,6 +11,8 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Features />
+      <Leader />
+      <Services />
     </div>
   );
 };
