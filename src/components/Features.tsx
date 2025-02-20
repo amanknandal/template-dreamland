@@ -1,59 +1,52 @@
 
-import { CheckCircle, Zap, Shield, Users } from "lucide-react";
+import { Briefcase, Calculator, Stethoscope, Car } from "lucide-react";
 
 const features = [
   {
-    icon: <Zap className="h-8 w-8" />,
-    title: "Lightning Fast",
-    description:
-      "Experience blazing-fast performance with our optimized infrastructure.",
+    icon: <Briefcase className="h-8 w-8" />,
+    title: "Employment",
+    description: "New opportunities for our citizens",
+    link: "#employment",
   },
   {
-    icon: <Shield className="h-8 w-8" />,
-    title: "Enterprise Security",
-    description:
-      "Bank-grade encryption and security measures to protect your data.",
+    icon: <Calculator className="h-8 w-8" />,
+    title: "Business Tax",
+    description: "Pay your business taxes online",
+    link: "#tax",
   },
   {
-    icon: <Users className="h-8 w-8" />,
-    title: "Team Collaboration",
-    description:
-      "Work seamlessly with your team in real-time across all devices.",
+    icon: <Stethoscope className="h-8 w-8" />,
+    title: "Health Medicine",
+    description: "Access to healthcare services",
+    link: "#health",
   },
   {
-    icon: <CheckCircle className="h-8 w-8" />,
-    title: "Easy Integration",
-    description:
-      "Integrate with your favorite tools and services in just minutes.",
+    icon: <Car className="h-8 w-8" />,
+    title: "Sidewalks Parks",
+    description: "City infrastructure maintenance",
+    link: "#infrastructure",
   },
 ];
 
 const Features = () => {
   return (
-    <section id="features" className="py-20 bg-muted">
+    <section id="services" className="py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            Features that make a difference
-          </h2>
-          <p className="text-secondary">
-            Discover the tools that will revolutionize your workflow and boost
-            productivity
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <div
+            <a
               key={index}
-              className="glass p-6 rounded-lg card-shadow hover-translate"
+              href={feature.link}
+              className="bg-white rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="text-accent mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-display font-semibold mb-2">
+              <div className="bg-[#0A2165] text-white p-4 rounded-lg inline-block mb-4">
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-display font-semibold mb-2 text-[#0A2165]">
                 {feature.title}
               </h3>
-              <p className="text-secondary">{feature.description}</p>
-            </div>
+              <p className="text-gray-600">{feature.description}</p>
+            </a>
           ))}
         </div>
       </div>
