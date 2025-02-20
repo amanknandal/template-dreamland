@@ -70,3 +70,44 @@
 .nav-item:hover::after {
   @apply w-full;
 }
+
+/* Enhanced animations */
+.hover-border-animation {
+  @apply relative overflow-hidden transition-transform duration-300 ease-out hover:-translate-y-1;
+}
+
+.hover-border-animation::before {
+  content: '';
+  @apply absolute inset-0 border-2 border-transparent opacity-0 transition-all duration-300;
+}
+
+.hover-border-animation:hover::before {
+  @apply border-[#0A2165] opacity-100 scale-105;
+}
+
+.service-card-hover {
+  @apply transition-all duration-300 ease-out;
+}
+
+.service-card-hover:hover {
+  @apply transform -translate-y-2 shadow-xl;
+  box-shadow: 0 0 0 2px #0A2165, 0 20px 30px -10px rgba(10, 33, 101, 0.2);
+}
+
+.feature-card-hover {
+  @apply transition-all duration-300 ease-out hover:shadow-lg;
+}
+
+.feature-card-hover:hover {
+  @apply transform -translate-y-2;
+  box-shadow: 0 0 0 2px #0A2165, 0 15px 25px -5px rgba(10, 33, 101, 0.1);
+}
+
+.leader-image-animation {
+  @apply transition-all duration-500;
+}
+
+.leader-image-animation:hover {
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 0 0 0 3px #0A2165, 0 25px 35px -15px rgba(10, 33, 101, 0.25);
+}

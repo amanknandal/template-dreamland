@@ -56,7 +56,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`group relative overflow-hidden rounded-xl transition-all duration-300 hover:-translate-y-2 ${
+              className={`service-card-hover group relative overflow-hidden rounded-xl ${
                 service.highlight ? 'ring-2 ring-red-500' : ''
               }`}
             >
@@ -64,7 +64,7 @@ const Services = () => {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-[300px] object-cover transform transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-[300px] object-cover transform transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
                 <h3 className="text-xl font-display font-semibold mb-3">
@@ -75,7 +75,7 @@ const Services = () => {
                 </p>
                 <Button
                   variant="outline"
-                  className="text-white border-white/20 hover:bg-white/10"
+                  className="text-white border-white/20 hover:bg-white/10 transition-all duration-300 hover:border-white"
                 >
                   {service.title} →
                 </Button>
@@ -85,10 +85,10 @@ const Services = () => {
         </div>
 
         <div className="mt-8 flex md:hidden gap-4">
-          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 w-full">
+          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 w-full transition-all duration-300 hover:border-white">
             Get To Know Us →
           </Button>
-          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 w-full">
+          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 w-full transition-all duration-300 hover:border-white">
             All Services →
           </Button>
         </div>

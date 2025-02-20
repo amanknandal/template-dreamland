@@ -37,9 +37,9 @@ const Features = () => {
             <a
               key={index}
               href={feature.link}
-              className="bg-white rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              className="feature-card-hover bg-white rounded-xl p-6 text-center"
             >
-              <div className="bg-[#0A2165] text-white p-4 rounded-lg inline-block mb-4">
+              <div className="bg-[#0A2165] text-white p-4 rounded-lg inline-block mb-4 transition-transform duration-300 hover:scale-110">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-display font-semibold mb-2 text-[#0A2165]">

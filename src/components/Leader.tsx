@@ -8,7 +8,7 @@ const Leader = () => {
             <img
               src="/lovable-uploads/fcba5cb8-2061-44e5-bda4-c72c70b35041.png"
               alt="Mayor"
-              className="rounded-lg shadow-xl animate-fade-up"
+              className="rounded-lg shadow-xl animate-fade-up leader-image-animation"
             />
             <div className="absolute -right-6 -bottom-6 -z-10 w-full h-full border-2 border-[#0A2165] rounded-lg"></div>
           </div>
