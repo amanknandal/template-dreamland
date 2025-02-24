@@ -1,69 +1,106 @@
-# Welcome to your Lovable project
 
-## Project info
+# Municity - Modern Government Website
 
-**URL**: https://lovable.dev/projects/e5e11907-e6d1-4f3c-81cd-9a5b3e0814b5
+## Overview
+Municity is a modern, responsive government website built with React, TypeScript, and Tailwind CSS. It features smooth animations, optimized performance, and a user-friendly interface.
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- Responsive design for all devices
+- Modern UI with smooth animations
+- Performance optimized
+- Accessible components
+- SEO friendly
+- Interactive elements
 
-**Use Lovable**
+## 🛠 Technology Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e5e11907-e6d1-4f3c-81cd-9a5b3e0814b5) and start prompting.
+- React 18
+- TypeScript
+- Tailwind CSS
+- Shadcn UI Components
+- Vite
+- Lucide Icons
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🏃‍♂️ Quick Start
 
-**Use your preferred IDE**
+1. Clone the repository
+```bash
+git clone <repository-url>
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Install dependencies
+```bash
+npm install
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🎨 Components
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The project includes the following main components:
 
-**Use GitHub Codespaces**
+- `Navbar`: Navigation component with responsive menu
+- `Hero`: Landing section with video button
+- `Features`: Grid of city services
+- `About`: City information section
+- `Leader`: Mayor/leadership section
+- `Services`: Government services grid
+- `Blog`: News and updates section
+- `Contact`: Footer with contact information
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🔧 Performance Optimizations
 
-## What technologies are used for this project?
+- Lazy loading of images
+- Optimized animations
+- Code splitting
+- Minimal bundle size
+- Efficient asset loading
 
-This project is built with .
+## 🎭 Animations
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The project includes several custom animations:
 
-## How can I deploy this project?
+- Hover effects with glowing borders
+- Smooth transitions
+- Floating animations
+- Pulsing effects
+- Concentric circles animation
 
-Simply open [Lovable](https://lovable.dev/projects/e5e11907-e6d1-4f3c-81cd-9a5b3e0814b5) and click on Share -> Publish.
+## 📱 Responsive Design
 
-## I want to use a custom domain - is that possible?
+The website is fully responsive and works on:
+- Mobile devices
+- Tablets
+- Desktop computers
+- Large screens
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 🔎 SEO
+
+- Semantic HTML
+- Meta tags
+- Optimized content structure
+- Fast loading times
+
+## 📖 Documentation
+
+For detailed documentation of components and features, see the `/docs` folder.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 Contact
+
+For any questions or feedback, please contact [contact@municity.com](mailto:contact@municity.com)

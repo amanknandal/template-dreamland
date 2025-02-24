@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
@@ -110,4 +109,92 @@
 .leader-image-animation:hover {
   transform: scale(1.02) translateY(-5px);
   box-shadow: 0 0 0 3px #0A2165, 0 25px 35px -15px rgba(10, 33, 101, 0.25);
+}
+
+/* Enhanced Animations */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hover-border-glow {
+  @apply relative transition-all duration-300 ease-out;
+}
+
+.hover-border-glow:hover {
+  @apply transform -translate-y-1;
+  box-shadow: 0 0 0 2px #ea384c, 0 0 20px -5px rgba(234, 56, 76, 0.5);
+}
+
+.service-card-hover {
+  @apply transition-all duration-500 ease-out;
+}
+
+.service-card-hover:hover {
+  @apply transform -translate-y-2;
+  box-shadow: 0 0 0 3px #ea384c, 0 20px 30px -10px rgba(234, 56, 76, 0.3);
+}
+
+.feature-card-hover {
+  @apply transition-all duration-300 ease-out;
+}
+
+.feature-card-hover:hover {
+  @apply transform -translate-y-2;
+  box-shadow: 0 0 0 2px #ea384c, 0 15px 25px -5px rgba(234, 56, 76, 0.2);
+}
+
+.video-button {
+  @apply relative bg-[#ea384c] text-white rounded-full p-4 transition-transform hover:scale-105;
+}
+
+.video-button::before,
+.video-button::after {
+  content: '';
+  @apply absolute inset-0 rounded-full bg-[#ea384c];
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.video-button::after {
+  animation-delay: 1s;
+}
+
+/* Performance Optimizations */
+.lazy-image {
+  @apply transition-opacity duration-300 opacity-0;
+}
+
+.lazy-image.loaded {
+  @apply opacity-100;
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Enhanced UI Elements */
+.glass-effect {
+  @apply backdrop-blur-md bg-white/10 border border-white/20;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#ea384c] to-[#0A2165];
 }
