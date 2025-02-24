@@ -141,7 +141,7 @@
 
 .hover-border-glow:hover {
   @apply transform -translate-y-1;
-  box-shadow: 0 0 0 2px #ea384c, 0 0 20px -5px rgba(234, 56, 76, 0.5);
+  box-shadow: 0 0 0 4px #ea384c, 0 0 25px -5px rgba(234, 56, 76, 0.6);
 }
 
 .service-card-hover {
@@ -150,7 +150,7 @@
 
 .service-card-hover:hover {
   @apply transform -translate-y-2;
-  box-shadow: 0 0 0 3px #ea384c, 0 20px 30px -10px rgba(234, 56, 76, 0.3);
+  box-shadow: 0 0 0 4px #ea384c, 0 20px 30px -10px rgba(234, 56, 76, 0.4);
 }
 
 .feature-card-hover {
@@ -159,7 +159,7 @@
 
 .feature-card-hover:hover {
   @apply transform -translate-y-2;
-  box-shadow: 0 0 0 2px #ea384c, 0 15px 25px -5px rgba(234, 56, 76, 0.2);
+  box-shadow: 0 0 0 4px #ea384c, 0 15px 25px -5px rgba(234, 56, 76, 0.3);
 }
 
 .video-button {

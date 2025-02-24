@@ -13,7 +13,6 @@ const services = [
     title: "Building Sanction",
     description: "We will ensure the safety of all buildings that are worn and not resistant to earthquakes.",
     link: "#building-sanction",
-    highlight: true,
   },
   {
     image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80",
@@ -43,10 +42,10 @@ const Services = () => {
             </p>
           </div>
           <div className="hidden md:flex gap-4">
-            <Button variant="outline" className="text-white border-white/20 hover:bg-white/10">
+            <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:border-[#ea384c] transition-all duration-300">
               Get To Know Us →
             </Button>
-            <Button variant="outline" className="text-white border-white/20 hover:bg-white/10">
+            <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:border-[#ea384c] transition-all duration-300">
               All Services →
             </Button>
           </div>
@@ -56,9 +55,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`service-card-hover group relative overflow-hidden rounded-xl ${
-                service.highlight ? 'ring-2 ring-red-500' : ''
-              }`}
+              className="service-card-hover group relative overflow-hidden rounded-xl"
             >
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-10"></div>
               <img
@@ -75,7 +72,7 @@ const Services = () => {
                 </p>
                 <Button
                   variant="outline"
-                  className="text-white border-white/20 hover:bg-white/10 transition-all duration-300 hover:border-white"
+                  className="text-white border-white/20 hover:bg-white/10 hover:border-[#ea384c] transition-all duration-300"
                 >
                   {service.title} →
                 </Button>
@@ -85,10 +82,10 @@ const Services = () => {
         </div>
 
         <div className="mt-8 flex md:hidden gap-4">
-          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 w-full transition-all duration-300 hover:border-white">
+          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:border-[#ea384c] w-full transition-all duration-300">
             Get To Know Us →
           </Button>
-          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 w-full transition-all duration-300 hover:border-white">
+          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 hover:border-[#ea384c] w-full transition-all duration-300">
             All Services →
           </Button>
         </div>
